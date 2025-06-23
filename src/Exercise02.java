@@ -21,21 +21,24 @@ public class Exercise02 {
                     do {
                         System.out.println("Moi nhap diem hoc vien");
                         point = sc.nextDouble();
-                        if (point > 10 || point < 0 && point != -1) {
-                            System.out.println(" Diem khong hop le. Vui long nhap lai.");
-                        } else if (point >= 0 && point < 5) {
-                            System.out.println("Hoc luc yeu ");
-                        } else if (point >= 5 && point < 7) {
-                            System.out.println("Hoc luc trung binh");
+                        if(point != -1){
+                            if (point > 10 || point < 0) {
+                                System.out.println(" Diem khong hop le. Vui long nhap lai.");
+                            } else if (point >= 0 && point < 5) {
+                                System.out.println("Hoc luc yeu ");
+                            } else if (point >= 5 && point < 7) {
+                                System.out.println("Hoc luc trung binh");
 
-                        } else if (point >= 7 && point < 8) {
-                            System.out.println("Hoc luc kha");
+                            } else if (point >= 7 && point < 8) {
+                                System.out.println("Hoc luc kha");
 
-                        } else if (point >= 8 && point < 9) {
-                            System.out.println("Hoc luc gioi");
-                        } else if (point >= 9) {
-                            System.out.println("Hoc luc xuat sac");
+                            } else if (point >= 8 && point < 9) {
+                                System.out.println("Hoc luc gioi");
+                            } else if (point >= 9) {
+                                System.out.println("Hoc luc xuat sac");
+                            }
                         }
+
 
                         if (point > 0 && point <= 10) {
                             if (point > max) {
